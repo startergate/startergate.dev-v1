@@ -57,7 +57,7 @@ const Layout = ({ children, bottomActions = null }: { children: React.ReactNode;
       </div>
       <footer>
         <div>
-          © {new Date().getFullYear()} startergate, Built with
+          © 2020-2026 startergate, Built with
           {` `}
           <a className={'noLint'} href={'https://www.gatsbyjs.org'}>
             <Badge
