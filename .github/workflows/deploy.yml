@@ -28,4 +28,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: master
           allow_empty_commit: true
-          cname: startergate.dev
