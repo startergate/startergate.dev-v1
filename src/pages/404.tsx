@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -23,7 +24,7 @@ const NotFoundPage = () => (
         </div>
         <h1>NOT FOUND</h1>
         <p>this page does not exist lol</p>
-        <a href="/">pls go to main page</a>
+        <Link to="/">pls go to main page</Link>
       </div>
     </section>
   </Layout>

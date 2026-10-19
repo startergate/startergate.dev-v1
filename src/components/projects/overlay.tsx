@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { navigate } from 'gatsby';
+import { navigate, withPrefix } from 'gatsby';
 
 import ProjectDetail from './detail';
 
@@ -28,7 +28,11 @@ const Overlay = ({ data, ...props }) => {
         document.querySelectorAll('.overlay-item').forEach((element) => {
           element.classList.remove('active');
         });
-        if (!['/', '/projects/'].includes(window.location.pathname))
+        if (
+          ![withPrefix('/'), withPrefix('/projects/')].includes(
+            window.location.pathname
+          )
+        )
           return navigate('/projects/');
       }}
     >

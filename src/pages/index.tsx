@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { graphql, Link, useStaticQuery, withPrefix } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -571,7 +571,7 @@ const IndexPage = () => {
             <span className={'serif'}>장려상</span>
             <br />
             <span className={'serif'}>
-              <a href={'/project/The Intersection'}>The Intersection</a>
+              <a href={withPrefix('/project/The Intersection')}>The Intersection</a>
             </span>
           </div>
           <div className={'cv-item'}>
@@ -580,7 +580,7 @@ const IndexPage = () => {
             <span className={'serif'}>장려상</span>
             <br />
             <span className={'serif'}>
-              <a href={'/project/Eliverd'}>Eliverd</a>
+              <a href={withPrefix('/project/Eliverd')}>Eliverd</a>
             </span>
           </div>
           <div className={'cv-item'}>
@@ -589,7 +589,7 @@ const IndexPage = () => {
             <span className={'serif'}>장려상</span>
             <br />
             <span className={'serif'}>
-              <a href={'/project/GSM Pay'}>GSM Pay</a>
+              <a href={withPrefix('/project/GSM Pay')}>GSM Pay</a>
             </span>
           </div>
           <div className={'cv-item'}>
@@ -625,8 +625,8 @@ const IndexPage = () => {
             <span className={'serif'}>2020.1 ~ 2020.8</span>
             <br />
             <span className={'serif'}>
-              프로젝트: <a href={'/project/DOTORI'}>DOTORI</a>,{' '}
-              <a href={'/project/GSM Pay'}>GSM Pay</a>
+              프로젝트: <a href={withPrefix('/project/DOTORI')}>DOTORI</a>,{' '}
+              <a href={withPrefix('/project/GSM Pay')}>GSM Pay</a>
             </span>
           </div>
           <div className={'cv-item'}>
@@ -649,15 +649,15 @@ const IndexPage = () => {
             <span className={'serif'}>2019.3 ~ </span>
             <br />
             <span className={'serif'}>
-              프로젝트: <a href={'/project/Lost'}>Lost</a>
+              프로젝트: <a href={withPrefix('/project/Lost')}>Lost</a>
             </span>
           </div>
         </section>
         <External.DownloadDropdown
           options={[
-            { label: 'Korean (Short, 1 page)', link: '/cv.pdf', filename: 'cv.pdf' },
-            { label: 'Korean (Full)', link: '/resume-ko.pdf', filename: 'resume-ko.pdf' },
-            { label: 'English (Full)', link: '/resume-en.pdf', filename: 'resume-en.pdf' },
+            { label: 'Korean (Short, 1 page)', link: withPrefix('/cv.pdf'), filename: 'cv.pdf' },
+            { label: 'Korean (Full)', link: withPrefix('/resume-ko.pdf'), filename: 'resume-ko.pdf' },
+            { label: 'English (Full)', link: withPrefix('/resume-en.pdf'), filename: 'resume-en.pdf' },
           ]}
         />
       </section>

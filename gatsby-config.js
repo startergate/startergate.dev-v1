@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/v1`,
   siteMetadata: {
     title: `STARTERGATE`,
     description: `I'm STARTERGATE. Backend Developer`,

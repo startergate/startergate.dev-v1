@@ -17,7 +17,7 @@ const overlayDispatcher = (event: React.MouseEvent) => {
 
 const ProjectCard = ({ data }) => {
   useEffect(() => {
-    const regex = new RegExp('/project/|/', 'g');
+    const regex = new RegExp('^.*/project/|/', 'g');
 
     if (
       location.pathname.split(regex).join('').split('%20').join(' ') ===
